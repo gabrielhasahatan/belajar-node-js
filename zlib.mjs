@@ -1,6 +1,9 @@
 import zlib from 'zlib'
 import fs from 'fs'
 
+//ini kompres bukan ekripsi
+//dikecilin/kompres dulu datanya
+
 //mengkompresi menggunakan Gzip
 const source = fs.readFileSync('zlib.mjs')       
 const result =zlib.gzipSync(source)
